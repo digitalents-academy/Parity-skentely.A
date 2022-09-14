@@ -26,7 +26,6 @@ body {
 }
 
 .navbar h1 {
-    color: black;
     font-family: 'DM Serif Display', serif;
     font-weight: 700;
 }
@@ -35,13 +34,31 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position:relative; */
     padding: 20px;
 
     background:hsl(0, 0%, 98%) ;
   
     height: 80px;
     width: 375px;
+}
+
+.nav-dropdown {
+    text-align: center;
+    font-family: karla;
+    font-weight:400;
+    color: hsl(0, 0%, 98%);
+    font-size: small;
+
+    background: hsl(256, 26%, 20%);
+    background-image: url('images/bg-pattern-mobile-nav.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 440px;
+    padding-top: 10px;
+}
+
+.nav-dropdown h3 {
+    padding: 5px;
 }
 
 .background-image {
@@ -74,19 +91,74 @@ body {
     font-size: 10px;
 }
 
-.promises {
+hr {
+    position: relative;
+    top: 80px;
+    border: none;
+    height: 1px;
+    width:40%;
+    background:  hsl(273, 4%, 51%);
+    margin-top:40px; 
+    margin-bottom: 60px;
+}
+
+.content h1 {
+    padding: 20px;
+    margin-top:120px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column; 
+}
+
+.columns {
     text-align: center;
     padding: 20px 25px;
     font-family: karla;
     font-weight:400;
 }
 
-.promises p {
+.columns p {
     color: hsl(273, 4%, 51%);
 }
 
-.promises img {
+.columns img {
     width: 80px;
 }
+
+.footer {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    background-image: url("images/bg-pattern-footer-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+.footer hr {
+    background-color: #ccc;    
+    margin-top: 0;
+    width: 80%;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links {
+    text-align: center;
+    font-family: karla;
+    font-weight: 700;
+    font-size: small;
+}
+
+.links h3 {
+    color: hsl(273, 4%, 51%);
+    padding: 12px;
+}
+
 
 /* } */

@@ -1,31 +1,19 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 475px) {
-
-  
-
-*{ box-sizing:border-box;
 
 
-}
+/* @media only screen and (max-width: 475px) { */
+
+*{ box-sizing:border-box; }
 
 :root {
-
-  /* ### Primary */
 --Dark-Violet: hsl(256, 26%, 20%);
 --Grayish-Blue: hsl(216, 30%, 68%);
-
-/* ### Neutral */
-
 --Very-Dark-Violet: hsl(270, 9%, 17%);
 --Dark-Grayish-Violet: hsl(273, 4%, 51%);
 --Very-Light-Gray: hsl(0, 0%, 98%);
 
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -69,23 +57,36 @@ body {
     padding: 0;
     background: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
-    font-family:karla;
+    font-family: karla;
     font-weight:400;
     text-align: center;
     padding: 20% 10% 20% 10%;
 }
 
-.description p{
+.description p {
     margin-bottom: 40px;
 }
 
-.description p2{
+.description p2 {
     margin-top: 60px; 
-   border:1.4px solid  hsl(0, 0%, 98%);
-   padding: 6px 18px;
-   font-size: 10px;
+    border:1.4px solid hsl(0, 0%, 98%);
+    padding: 6px 18px;
+    font-size: 10px;
 }
 
-
-
+.promises {
+    text-align: center;
+    padding: 20px 25px;
+    font-family: karla;
+    font-weight:400;
 }
+
+.promises p {
+    color: hsl(273, 4%, 51%);
+}
+
+.promises img {
+    width: 80px;
+}
+
+/* } */

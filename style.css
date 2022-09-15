@@ -10,17 +10,18 @@
 --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-/* @media only screen and (max-width: 475px) { */
-
 body {
     margin: 0;
     padding: 0;
     background-color: hsl(0, 0%, 98%);
-    width: 375px;
     height:100%;
 
     display: flex;
     flex-direction: column;
+
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+
 }
 
 .navbar h1 {
@@ -37,14 +38,11 @@ body {
     background:hsl(0, 0%, 98%) ;
   
     height: 80px;
-    /* width: 375px; */
 }
 
 .nav-dropdown {
     display: none;
     text-align: center;
-    font-family: 'Karla', sans-serif;
-    font-weight:400;
     color: hsl(0, 0%, 98%);
     font-size: small;
 
@@ -63,8 +61,6 @@ body {
 .description {
     background: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
     text-align: center;
     height: 950px;
     background-image: url(images/bg-pattern-intro-right-mobile.svg);
@@ -120,8 +116,6 @@ body {
     margin-top: 30px;
     text-align: center;
     padding: 20px 25px;
-    font-family: 'Karla', sans-serif;
-    font-weight:400;
 }
 
 .columns p {
@@ -161,7 +155,6 @@ body {
   padding: 10px 20px;
   color: hsl(0, 0%, 98%);
   font-size: 15px;
-  font-family: 'Karla', sans-serif;
   margin-bottom: 60px;
 }
 
@@ -187,7 +180,6 @@ body {
 
 .links {
     text-align: center;
-    font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 12px;
     margin-bottom: 100px;
@@ -197,9 +189,41 @@ body {
     color: hsl(273, 4%, 51%);
     padding: 15px;
 }
-/* } */
+
+/* Mobile devices ( = 375px ) */
+@media only screen and (max-width: 900px) {
+
+    .navbar h3 {
+        display: none;
+    }
+}
+
 
 /* Desktop devices ( = 1440px ) */
-/* @media only screen and (min-width: 1000px){
+@media only screen and (min-width: 900px){
 
-} */
+    .navbar img {
+        display: none;
+    }
+
+    .navbar {
+        margin: 0 100px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        font-family: 'Karla', sans-serif;
+        color: hsl(273, 4%, 51%);
+        padding-right: 40px;
+    }
+
+    .view-plans {
+        color: black;
+        border: 1px solid black;
+        padding: 5px 15px;
+    }
+
+}

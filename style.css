@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
-
-
-/* @media only screen and (max-width: 475px) { */
-
-*{ box-sizing:border-box; }
+*{ box-sizing: border-box; }
 
 :root {
 --Dark-Violet: hsl(256, 26%, 20%);
@@ -13,6 +9,8 @@
 --Dark-Grayish-Violet: hsl(273, 4%, 51%);
 --Very-Light-Gray: hsl(0, 0%, 98%);
 }
+
+/* @media only screen and (max-width: 475px) { */
 
 body {
     margin: 0;
@@ -39,13 +37,13 @@ body {
     background:hsl(0, 0%, 98%) ;
   
     height: 80px;
-    width: 375px;
+    /* width: 375px; */
 }
 
 .nav-dropdown {
     display: none;
     text-align: center;
-    font-family: karla;
+    font-family: 'Karla', sans-serif;
     font-weight:400;
     color: hsl(0, 0%, 98%);
     font-size: small;
@@ -62,65 +60,73 @@ body {
     padding: 5px;
 }
 
-.background-image {
-    height: 100%;
-    width: 375px;
-    padding: 0;
-    margin:0;
-    display: flex;
-}
-
 .description {
-    width: 375px;
-    padding: 0;
     background: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
-    font-family: karla;
-    font-weight:400;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
     text-align: center;
-    padding: 20% 10% 20% 10%;
+    height: 950px;
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 127%;
 }
 
-.description p {
-    margin-bottom: 40px;
+.description-text {
+    padding: 50px 30px 20px;
+    background-image: url(images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    margin-top: -5px;
+}
+
+.description h1 {
+    font-size: 40px;
 }
 
 .description p2 {
-    margin-top: 60px; 
+    margin-top: 100px; 
     border:1.4px solid hsl(0, 0%, 98%);
-    padding: 6px 18px;
-    font-size: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
 }
 
-hr {
-    position: relative;
-    top: 80px;
-    border: none;
-    height: 1px;
-    width:40%;
-    background:  hsl(273, 4%, 51%);
-    margin-top:40px; 
-    margin-bottom: 60px;
+.content {
+    height: 270px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat; 
+    background-position: 100% 270%;
+}
+
+.content hr {
+    margin-top: 130px;
+    width: 40%;
+    background-color: hsl(273, 4%, 51%); 
+    height: 1.5px; 
+    border: 0;
 }
 
 .content h1 {
-    padding: 20px;
-    margin-top:120px; 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column; 
+    padding-top: 10px;
+    font-size: 40px;
+    color: var(--Dark-Violet);
 }
 
 .columns {
+    margin-top: 30px;
     text-align: center;
     padding: 20px 25px;
-    font-family: karla;
+    font-family: 'Karla', sans-serif;
     font-weight:400;
 }
 
 .columns p {
     color: hsl(273, 4%, 51%);
+    margin-bottom: 50px;
 }
 
 .columns img {
@@ -128,7 +134,7 @@ hr {
 }
 
 .square {
-  margin-top: 120px;
+  margin-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0 22px 0 22px;
@@ -140,8 +146,9 @@ hr {
   align-items: center;
   background-image: url(images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
-  background-position: top -25% left 100%;
+  background-position: 100% -70px;
 }
+
 .square h1 {
   text-align: center;
   font-size: 40px;
@@ -149,12 +156,12 @@ hr {
 }
 
 .square p1 {
-  margin-top: 40px;
+  margin-top: 20px;
   border: 2.5px solid hsl(0, 0%, 98%);
-  padding: 6px 18px;
+  padding: 10px 20px;
   color: hsl(0, 0%, 98%);
   font-size: 15px;
-  font-family: karla;
+  font-family: 'Karla', sans-serif;
   margin-bottom: 60px;
 }
 
@@ -180,15 +187,19 @@ hr {
 
 .links {
     text-align: center;
-    font-family: karla;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: small;
+    font-size: 12px;
+    margin-bottom: 100px;
 }
 
 .links h3 {
     color: hsl(273, 4%, 51%);
-    padding: 12px;
+    padding: 15px;
 }
-
-
 /* } */
+
+/* Desktop devices ( = 1440px ) */
+/* @media only screen and (min-width: 1000px){
+
+} */

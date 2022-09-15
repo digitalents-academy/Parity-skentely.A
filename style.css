@@ -79,8 +79,11 @@ body {
     font-size: 40px;
 }
 
+.description p {
+    margin-bottom: 50px;
+}
+
 .description p2 {
-    margin-top: 100px; 
     border:1.4px solid hsl(0, 0%, 98%);
     padding: 10px 20px;
     font-size: 15px;
@@ -226,4 +229,21 @@ body {
         padding: 5px 15px;
     }
 
+    .description {
+        padding: 100px 200px;
+
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .description h1 {
+        font-size: 70px;
+    }
+
+    .description p {
+        font-size: 20px;
+    }
+
+   /*  Move image down next */
+   
 }

@@ -90,14 +90,15 @@ body {
 }
 
 .content {
-    padding-top: 60px;
+    padding: 60px 0px;
     text-align: center;
 
     background-image: url(images/bg-pattern-intro-right-mobile.svg);
     background-repeat: no-repeat; 
-    background-position: right 87%;
+    background-position: right -162.5px;
 }
 
+/* Line before "We're different" */
 .content:before {
     content: "";
     position: absolute;
@@ -112,20 +113,20 @@ body {
     padding-top: 10px;
     font-size: 40px;
     color: var(--Dark-Violet);
+    margin-bottom: 70px;
 }
 
-.columns {
+.column1, .column2, .column3 {
     margin-top: 30px;
     text-align: center;
-    padding: 20px 25px;
+    padding: 10px 25px;
 }
 
-.columns p {
+.content p {
     color: hsl(273, 4%, 51%);
-    margin-bottom: 50px;
 }
 
-.columns img {
+.content img {
     width: 80px;
 }
 
@@ -192,7 +193,7 @@ body {
     padding: 15px;
 }
 
-/* Mobile devices ( = 375px ) */
+/* Mobile only ( = 375px ) */
 @media only screen and (max-width: 900px) {
 
     .navbar h3 {
@@ -205,7 +206,7 @@ body {
 }
 
 
-/* Desktop devices ( = 1440px ) */
+/* Desktop only ( = 1440px ) */
 @media only screen and (min-width: 900px){
 
     .navbar img {
@@ -273,23 +274,34 @@ body {
     .desc-overlay-left {
         position: absolute;
         left: 0; 
-        bottom: -5%;
+        bottom: 0;
     }
 
     .content {
-        margin-top: 200px;
-        margin-left: 250px;
+        margin-top: 250px;
+        margin-left: 200px;
+        margin-right: 110px;
         background-image: unset;
-        text-align: left;
+
+        display: flex;
+        flex-direction: row;
     }
 
+    /* Line before "we're different" */
     .content:before {
-        top: 930px;
-        left: 250px;
+        top: 1000px;
+        left: 200px;
     }
 
     .content h1 {
         font-size: 60px;
+        position: absolute;
     }
-    
+
+    .column1, .column2, .column3 {
+        margin-top: 200px;
+        padding-left: 0;
+        text-align: left;
+    }
+
 }

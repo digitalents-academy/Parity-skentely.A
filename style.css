@@ -346,8 +346,7 @@ body {
     .footer-top {
         align-self: flex-start;
         margin-left: 150px;
-        margin-right: 150px;
-        width: 1040px;
+        width: 1140px;
 
         display: flex;
         justify-content: space-between;

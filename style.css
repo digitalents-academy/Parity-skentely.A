@@ -131,33 +131,33 @@ body {
 }
 
 .square {
-  margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0 22px 0 22px;
-  height: 345px;
-  background: hsl(256, 26%, 20%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background-image: url(images/bg-pattern-intro-right-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: 100% -70px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 22px 0 22px;
+    height: 345px;
+    background: hsl(256, 26%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -70px;
 }
 
 .square h1 {
-  text-align: center;
-  font-size: 40px;
-  color: hsl(0, 0%, 98%);
+    text-align: center;
+    font-size: 40px;
+    color: hsl(0, 0%, 98%);
 }
 
 .square p {
-  border: 2.5px solid hsl(0, 0%, 98%);
-  padding: 10px 20px;
-  color: hsl(0, 0%, 98%);
-  font-size: 15px;
-  margin-bottom: 60px;
+    border: 2.5px solid hsl(0, 0%, 98%);
+    padding: 10px 20px;
+    color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    margin-bottom: 60px;
 }
 
 .footer {
@@ -341,12 +341,11 @@ body {
     
     .footer {
         background-image: url(images/bg-pattern-footer-desktop.svg);
+        margin-right: 150px;
     }
     
     .footer-top {
-        align-self: flex-start;
         margin-left: 150px;
-        width: 1140px;
 
         display: flex;
         justify-content: space-between;

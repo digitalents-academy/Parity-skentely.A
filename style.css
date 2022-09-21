@@ -76,6 +76,8 @@ body {
 }
 
 .description h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
     font-size: 40px;
 }
 
@@ -110,10 +112,17 @@ body {
 }
 
 .content h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
     padding-top: 10px;
     font-size: 40px;
     color: var(--Dark-Violet);
     margin-bottom: 70px;
+}
+
+.content h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 .column1, .column2, .column3 {
@@ -147,6 +156,8 @@ body {
 }
 
 .square h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
     text-align: center;
     font-size: 40px;
     color: hsl(0, 0%, 98%);
@@ -330,7 +341,7 @@ body {
     }
     
     .square h1 {
-        width: 480px;
+        width: 440px;
         font-size: 50px;
         text-align: left;
     }

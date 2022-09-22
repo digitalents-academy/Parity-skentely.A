@@ -228,6 +228,15 @@ body {
     .desc-overlay-right, .desc-overlay-left {
         display: none;
     }
+
+    .color-overlay {
+        display: none;
+        position: absolute;
+        background-color: white;
+        opacity: 0.6;
+        height: 3500px;
+        width: 100%;
+    }
 }
 
 
